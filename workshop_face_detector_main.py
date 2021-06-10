@@ -6,7 +6,7 @@ import workshop_faceblur
 def blurfile():
     path = askopenfilename()
     img = cv2.imread(path)
-    img =faceblur.blurfaces(img)
+    img =workshop_faceblur.blurfaces(img)
     cv2.imshow("Blured image",img)
 def blurwebcam():
     cam = cv2.VideoCapture(0)
